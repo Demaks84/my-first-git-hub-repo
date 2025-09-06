@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demaks — My Life Journey</title>
+  <meta name="description" content="A personal website sharing my story, milestones, lessons, and passions." />
+  <meta property="og:title" content="[Your Name] — My Life Journey" />
+  <meta property="og:description" content="A personal website sharing my story, milestones, lessons, and passions." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Dennis Makori Omagwa</span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+    </div>
+    <nav id="mobileNav" class="container" hidden>
+      <div class="grid" style="padding-bottom:12px">
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="container hero">
+    <div class="hero-card grid" style="grid-template-columns: 1.2fr .8fr;">
+      <div>
+        <h1>Hi, I'm <span style="background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent">Dennis Makori Omagwa</span></h1>
+        <p>Welcome to my story—moments that shaped me, challenges that refined me, and lessons I’m still learning.</p>
+        <div class="cta">
+          <a class="btn primary" href="#journey">Explore my journey</a>
+          <a class="btn" href="#contact">Say hello</a>
+        </div>
+      </div>
+      <div aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Warm sunrise over hills" />
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-sub">A quick snapshot of who I am and what I care about.</p>
+    <div class="card grid" style="grid-template-columns: .9fr 1.1fr;align-items:center">
+      <img src="images/me.jpg"alt="Books, coffee and notebook on a desk"/>
+      <div>
+        <p>Hello! I’m <strong>Dennis Makori Omagwa</strong>, a <em>life enthusiast</em> who believes growth happens at the edge of your comfort zone. I enjoy turning experiences into meaningful stories and skills.</p>
+        <p>Beyond work, you’ll often find me <em>exploring an interest I discovered late <strong>Cars</strong></em>, learning something new, or spending time with people who make me better.</p>
+        <div class="chips" aria-label="Core values">
+          <span class="chip">Curiosity</span>
+          <span class="chip">Resilience</span>
+          <span class="chip">Humility</span>
+          <span class="chip">Service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey -->
+  <section id="journey" class="container">
+    <h2 class="section-title">My Journey</h2>
+    <p class="section-sub">Milestones, pivots, and the lessons in between.</p>
+    <div class="card timeline">
+      <div class="t-item">
+        <h4>Early Roots — <small>1998-2000 </small></h4>
+        <p>Grew up in <em>the Kangemi Ghetto </em> where I learned the value of family, community, and hard work.</p>
+      </div>
+      <div class="t-item">
+        <h4>Education & Exploration — <small>[Year–Year]</small></h4>
+        <p>Studied <em>[field]</em>. Said yes to opportunities that built confidence and perspective.</p>
+      </div>
+      <div class="t-item">
+        <h4>First Breakthrough — <small>[Year]</small></h4>
+        <p>Faced <em>[challenge]</em> and discovered I’m more capable than I thought.</p>
+      </div>
+      <div class="t-item">
+        <h4>Recent Chapter — <small>[Year–Present]</small></h4>
+        <p>Building <em>[project/goal]</em> and focusing on impact, not just output.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Passions -->
+  <section id="skills" class="container">
+    <h2 class="section-title">Skills & Passions</h2>
+    <p class="section-sub">What I love doing—and what I’m getting better at every day.</p>
+    <div class="card">
+      <div class="chips" role="list">
+        <span class="chip" role="listitem">Storytelling</span>
+        <span class="chip" role="listitem">Writing & Blogging</span>
+        <span class="chip" role="listitem">Community Building</span>
+        <span class="chip" role="listitem">[Your Skill]</span>
+        <span class="chip" role="listitem">[Another Skill]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-sub">Moments that make me smile.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1200&auto=format&fit=crop" alt="Sunset over the ocean"/>
+      <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?q=80&w=1200&auto=format&fit=crop" alt="Trail in the forest"/>
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Morning light in the hills"/>
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop" alt="City skyline from a bridge"/>
+    </div>
+  </section>
+
+  <!-- Blog / Reflections -->
+  <section id="blog" class="container">
+    <h2 class="section-title">Reflections</h2>
+    <p class="section-sub">Notes to future me (and anyone who needs them).</p>
+    <div class="cards">
+      <article class="card post">
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop" alt="Notebook and pen on a wooden table"/>
+        <h4>On Starting Small</h4>
+        <p>Big changes begin with tiny, consistent steps. Here’s how I learned to show up even when it felt uncomfortable.</p>
+        <a class="btn" href="#">Read more</a>
+      </article>
+      <article class="card post">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Foggy mountains at sunrise"/>
+        <h4>What Failure Taught Me</h4>
+        <p>Failure isn’t the opposite of success—it’s part of it. A few stories that reshaped how I take risks.</p>
+        <a class="btn" href="#">Read more</a>
+      </article>
+      <article class="card post">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop" alt="Footprints on a sandy beach"/>
+        <h4>Choosing Kindness</h4>
+        <p>Kindness scales. The more you give, the more it grows—inside you and around you.</p>
+        <a class="btn" href="#">Read more</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">I’d love to hear from you. Drop a message below or reach out on socials.</p>
+    <div class="card">
+      <form name="contact" onsubmit="event.preventDefault(); alert('Thanks for your message! (Wire this up to your email or a form service)')">
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          <label>
+            <span>Name</span>
+            <input required type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input required type="email" name="email" placeholder="you@example.com" />
+          </label>
+        </div>
+        <label>
+          <span>Message</span>
+          <textarea required name="message" placeholder="Write your message..."></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="grid" style="grid-template-columns: 1fr auto; align-items:center">
+      <small>© <span id="y"></span> Dennis Makori Omagwa. All rights reserved.</small>
+      <div class="chips">
+        <a class="chip" href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const btn = document.getElementById('menuBtn');
+    const mobile = document.getElementById('mobileNav');
+    btn?.addEventListener('click', ()=>{
+      const open = mobile.hasAttribute('hidden') === false;
+      if(open){ mobile.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false') }
+      else{ mobile.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true') }
+    });
+    // Year stamp
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
