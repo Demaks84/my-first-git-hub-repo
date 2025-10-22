@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+.display {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  background-color: #93ca34;
+  color: white;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  background-color: #666;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#47a164;
+}
+/* Slide-out History Panel */
+.history-panel {
+    position:relative;
+    top:;
+    right: 5px; ; 
+    width: 300px;
+    height: 10%;
+    background-color: #1a1a1a;
+    color: #0f0;
+    padding: 20px;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.4);
+    transition: right 0.3s ease;
+    overflow-y:auto;
+    z-index:;
+}
+
+.history-panel.open {
+    right: 10; /* slide in */
+}
+
+.history-panel h3 {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* History items*/
+#history div {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+}
+
+.toggle-btn {
+    position: fixed;
+    top:90px ;
+    right:;
+    background-color: #333;
+    color: #0f0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
